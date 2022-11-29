@@ -23,7 +23,6 @@ const App: React.FC = () => {
 
   const changeValue = (updatedValue: questionType) => {  
     const updatedQA = allQA.map((QA, QAindex) => (QAindex === number ? updatedValue : QA));
-    console.log(updatedQA, number);
     setAllQA(updatedQA)
   }
 
