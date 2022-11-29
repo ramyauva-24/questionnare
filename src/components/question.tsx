@@ -30,8 +30,6 @@ const Question: React.FC<questionAnswerProps> = ({ questionData, changeValue }: 
         if (name === typeConstant.CHECKTYPE) {
             updatedValue = handleCheckBox(value, checked)
         } else updatedValue = handleRadiobox(value, checked)
-        console.log(updatedValue, questionData);
-
         changeValue({ ...questionData, userInput: updatedValue })
     }
 
